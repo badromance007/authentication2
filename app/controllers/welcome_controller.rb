@@ -1,5 +1,9 @@
 class WelcomeController < ApplicationController
 
+  before_action :require_user, only: [:user, :buyer, :admin]
+  before_action :require_buyer, only: [:buyer]
+  before_action :require_admin, only: [:admin]
+
   def index
   end
 

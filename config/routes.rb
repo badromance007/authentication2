@@ -10,6 +10,13 @@ Rails.application.routes.draw do
   get 'buyer' => 'welcome#buyer'
   get 'admin' => 'welcome#admin'
 
+  get 'signup' => 'users#new'
+  resources :users
+
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
