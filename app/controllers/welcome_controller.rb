@@ -15,4 +15,8 @@ class WelcomeController < ApplicationController
 
   def admin
   end
+
+  def articles
+
+  end
 end
