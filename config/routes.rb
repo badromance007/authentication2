@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'admin' => 'welcome#admin'
   get 'articles' => 'welcome#articles'
   get 'contact' => 'welcome#contact'
+  get 'post' => 'welcome#post'
 
   get 'signup' => 'users#new'
   resources :users
