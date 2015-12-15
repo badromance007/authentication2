@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'buyer' => 'welcome#buyer'
   get 'admin' => 'welcome#admin'
   get 'articles' => 'welcome#articles'
+  get 'contact' => 'welcome#contact'
 
   get 'signup' => 'users#new'
   resources :users
